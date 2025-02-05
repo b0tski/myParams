@@ -57,7 +57,7 @@ namespace myParams
             Console.WriteLine($"The total is: {number}");
         }
 
-        static int Add(int[] randomNumbers)
+        static int Add(params int[] randomNumbers)
         {
             int total = 0;
             for (int i = 0; i < randomNumbers.Length; i++) 
@@ -67,7 +67,7 @@ namespace myParams
             return total;
         }
 
-        static int Multiply(int[] randomNumbers)
+        static int Multiply(params int[] randomNumbers)
         {
             int total = 1;
             for (int i = 0; i < randomNumbers.Length; i++)
